@@ -113,7 +113,7 @@ def capture():
     bot.sendPhoto(chat_id, photo = open('./image.jpg', 'rb'))
 
 
-bot = telepot.Bot('1741301378:AAGkYg6JUHgPIZp1m9-xaxsd6t5Y7URXhtY')
+bot = telepot.Bot('token")
 chat_id='1768829570'
 bot.message_loop(handle)
 
