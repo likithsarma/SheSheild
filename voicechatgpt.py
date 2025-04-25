@@ -54,7 +54,7 @@ def send_sms():
     time.sleep(2)
     rcv = ser.read(20)
     print(rcv)                                             
-    phno="9491070892"                          
+    phno="phone_number"                          
     cmd='AT+CMGS="'+str(phno)+'"\r\n'
     ser.write(cmd.encode())
     rcv = ser.read(20)
@@ -113,8 +113,8 @@ def capture():
     bot.sendPhoto(chat_id, photo = open('./image.jpg', 'rb'))
 
 
-bot = telepot.Bot('token")
-chat_id='1768829570'
+bot = telepot.Bot("token")
+chat_id='id'
 bot.message_loop(handle)
 
 print("Telegram bot is ready")
